@@ -10,6 +10,7 @@ public class Aluno {
 	Aluno(String nome, String curso){
 		this.nome = nome;
 		this.curso = curso;
+		this.nota = new ArrayList<>();
 	}
 	
 	public int media() {
@@ -43,8 +44,8 @@ public class Aluno {
 		return nota;
 	}
 
-	public void setNota(ArrayList<Integer> nota) {
-		this.nota = nota;
+	public void setNota(int nota) {
+		this.nota.add(nota);
 	}
 	
 	

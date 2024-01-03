@@ -18,13 +18,11 @@ public class App {
 		System.out.println("Agora, digite o numero de notas que serão calculadas:  ");
 		int numNotas = sc.nextInt();
 		
-		ArrayList<Integer> notas = new ArrayList<Integer>();
 		for(int n = 1; n <= numNotas; n++) {
 			System.out.println("digite a nota de numero " + n);
-			notas.add(sc.nextInt());
+			al.setNota(sc.nextInt());
 		}
 
-		al.setNota(notas);
 		System.out.println(al.getNome() + " sua media é: " + al.media());
 		
 		if(al.media() >= 6) {
